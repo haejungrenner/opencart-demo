@@ -1,0 +1,38 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "MNIT_DEV-Allowed Locations for resources",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/ENT-SANDBOX-MG/providers/Microsoft.Authorization/policyDefinitions/14e74cec-f959-40e1-92fd-f5cd29aff4ba",
+  "scope": "/providers/Microsoft.Management/managementGroups/ENT-SANDBOX-MG",
+  "notScopes": [],
+  "parameters": {
+   "allowedLocations": {
+    "value": [
+     "centralus",
+     "northcentralus",
+     "southcentralus",
+     "eastus",
+     "eastus2"
+    ]
+   }
+  },
+  "description": "",
+  "metadata": {
+   "assignedBy": "Haejung.Renner2@state.mn.us ",
+   "parameterScopes": {
+    "allowedLocations": "/providers/Microsoft.Management/managementGroups/ENT-SANDBOX-MG"
+   },
+   "createdBy": "41902a95-2aaf-4e02-a241-3c3a6a76d2fb",
+   "createdOn": "2021-06-08T17:18:02.9292342Z",
+   "updatedBy": "41902a95-2aaf-4e02-a241-3c3a6a76d2fb",
+   "updatedOn": "2021-06-10T20:59:01.8391957Z"
+  },
+  "enforcementMode": "DoNotEnforce"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/ENT-SANDBOX-MG/providers/Microsoft.Authorization/policyAssignments/333634ddfd054006ad26b34e",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "333634ddfd054006ad26b34e"
+}

@@ -1,0 +1,48 @@
+{
+ "properties": {
+  "displayName": "MNIT_DEV-Allowed Locations for resources",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "locations are allowed for centralus, northcentralus, southcentralus, eastus and eastus2.",
+  "metadata": {
+   "createdBy": "41902a95-2aaf-4e02-a241-3c3a6a76d2fb",
+   "createdOn": "2021-06-08T17:14:17.2379783Z",
+   "updatedBy": "41902a95-2aaf-4e02-a241-3c3a6a76d2fb",
+   "updatedOn": "2021-06-10T20:56:26.5008157Z"
+  },
+  "parameters": {
+   "allowedLocations": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Allowed locations",
+     "description": "The list of locations that can be specified when deploying resources",
+     "strongType": "location"
+    },
+    "allowedValues": [
+     "centralus",
+     "northcentralus",
+     "southcentralus",
+     "eastus",
+     "eastus2"
+    ],
+    "defaultValue": [
+     "centralus"
+    ]
+   }
+  },
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "location",
+     "in": "[parameters('allowedLocations')]"
+    }
+   },
+   "then": {
+    "effect": "deny"
+   }
+  }
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/ENT-SANDBOX-MG/providers/Microsoft.Authorization/policyDefinitions/14e74cec-f959-40e1-92fd-f5cd29aff4ba",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "14e74cec-f959-40e1-92fd-f5cd29aff4ba"
+}
