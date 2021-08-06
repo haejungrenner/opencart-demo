@@ -1,0 +1,113 @@
+{
+ "properties": {
+  "displayName": "HJR test1",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "_HJR",
+   "parameterScopes": {
+    "listOfResourceTypesAllowed": "/subscriptions/bb87a038-c70e-4ed6-8f03-f61d0e6c79d2",
+    "listOfAllowedLocations": "/subscriptions/bb87a038-c70e-4ed6-8f03-f61d0e6c79d2",
+    "listOfAllowedSKUs": "/subscriptions/bb87a038-c70e-4ed6-8f03-f61d0e6c79d2"
+   },
+   "createdBy": "704701bf-b3ee-4acc-9756-2be359b5d67c",
+   "createdOn": "2021-04-21T12:46:41.6119698Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Allowed resource types_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a08ec900-254a-4555-9bf5-e42af04b5c5c",
+    "parameters": {
+     "listOfResourceTypesAllowed": {
+      "value": [
+       "microsoft.aad/domainservices",
+       "microsoft.aad/domainservices/oucontainer",
+       "microsoft.aad/locations",
+       "microsoft.aad/locations/operationresults",
+       "microsoft.aad/operations",
+       "microsoft.aadiam/azureadmetrics",
+       "microsoft.aadiam/diagnosticsettings",
+       "microsoft.aadiam/diagnosticsettingscategories",
+       "microsoft.aadiam/operations",
+       "microsoft.aadiam/privatelinkforazuread",
+       "microsoft.aadiam/tenants",
+       "microsoft.addons/operationresults",
+       "microsoft.addons/operations",
+       "microsoft.addons/supportproviders",
+       "microsoft.adhybridhealthservice/aadsupportcases",
+       "microsoft.adhybridhealthservice/addsservices",
+       "microsoft.adhybridhealthservice/agents",
+       "microsoft.adhybridhealthservice/anonymousapiusers",
+       "microsoft.adhybridhealthservice/configuration",
+       "microsoft.adhybridhealthservice/logs",
+       "microsoft.adhybridhealthservice/operations",
+       "microsoft.adhybridhealthservice/reports",
+       "microsoft.adhybridhealthservice/servicehealthmetrics",
+       "microsoft.adhybridhealthservice/services",
+       "microsoft.advisor/advisorscore",
+       "microsoft.advisor/configurations",
+       "microsoft.advisor/generaterecommendations",
+       "microsoft.advisor/metadata",
+       "microsoft.advisor/operations",
+       "microsoft.advisor/recommendations",
+       "microsoft.advisor/suppressions"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "centralus",
+       "eastus",
+       "eastus2",
+       "northcentralus",
+       "southcentralus"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations for resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "eastus",
+       "eastus2",
+       "centralus",
+       "southcentralus",
+       "northcentralus"
+      ]
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed virtual machine size SKUs_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/cccc23c7-8427-4f53-ad12-b6a63eb452b3",
+    "parameters": {
+     "listOfAllowedSKUs": {
+      "value": [
+       "standard_a1",
+       "standard_a1_v2",
+       "standard_a10"
+      ]
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/bb87a038-c70e-4ed6-8f03-f61d0e6c79d2/providers/Microsoft.Authorization/policySetDefinitions/6ee261b9fd364b6787b94b04",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "6ee261b9fd364b6787b94b04"
+}
